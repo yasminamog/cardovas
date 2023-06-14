@@ -1,0 +1,5 @@
+pandas==1.4.2
+streamlit==1.23.1
+plotly-express==0.4.1
+matplotlib== 3.5.1
+hydralit.components==1.0.10
