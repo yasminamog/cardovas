@@ -94,10 +94,12 @@ if selected_menu == "Introduction":
     ]
 
     # Create a slider widget to select the year
+  # Create a slider widget to select the year
     min_year = df2_cleaned['Year'].min()
     max_year = df2_cleaned['Year'].max()
-    print(df2_cleaned['Year'].dtype)
-    selected_year = st.slider("Select Year", min_value=min_year, max_value=max_year)
+
+    selected_year = st.slider("Select Year", min_value=int(min_year), max_value=int(max_year))
+
 
     # Create an empty list to store the cumulative rates
     cumulative_rates = []
