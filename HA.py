@@ -217,6 +217,7 @@ if selected_menu == "Table":
     year_start, year_end = st.slider("Select Years", min_value=min_year, max_value=max_year, value=(min_year, max_year))
 
 
+
     # Filter the data for the selected countries and years
     if 'All' in selected_countries:
         filtered_df = df_cleaned[(df_cleaned['Year'] >= year_start) & (df_cleaned['Year'] <= year_end)]
