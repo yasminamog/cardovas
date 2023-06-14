@@ -211,11 +211,10 @@ if selected_menu == "Table":
     # Create a multiselect box to select countries
     selected_countries = st.multiselect('Select countries', ['All'] + list(df_cleaned['Country'].unique()), default='All')
 
-       # Create a slider widget to select the start and end years
+   # Create a slider widget to select the start and end years
     min_year = int(df_cleaned['Year'].min())
     max_year = int(df_cleaned['Year'].max())
-    year_start, year_end = st.slider("Select Years", min_value=min_year, max_value=max_year, value=(min_year, max_year))
-
+    year_start, year_end = st.slider("Select Years", min_value=int(min_year), max_value=int(max_year), value=(int(min_year), int(max_year)))
 
 
 
